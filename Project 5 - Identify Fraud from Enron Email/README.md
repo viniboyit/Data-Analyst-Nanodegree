@@ -1,13 +1,13 @@
 # Identifying Fraud from the Enron Dataset
 ### Written by Vincent Kneubuhler
 
-##Introduction
+## Introduction
 
 In the year 2000, Enron was known as one of the largest energy companies in the United States, claiming nearly $111 billion in revenues. At the end of 2001, it was revealed that there was widespread corporate fraud. Essentially all of Enron's nonexistent profits were created through a method called "mark-to-market" accounting, in which they would report profits even though they didn't earn a single dime. Even worse, they were solely responsible for the California electricity crisis, by which they performed large-scale blackouts to seize arbitrage opportunities.
 
 The goal for this project is to analyze the characteristics of employees who worked at Enron during the crisis to predict if they are a person of interest ("POI"). Various resources (documentaries, news articles, etc.) were used to label people in the data set as POIs if they were previously indicted (that is, there is a 100% chance they were guilty). The application of machine learning to this project may be of assistance if we take the predictions from the Enron data model and apply them to other companies facing similar circumstances, through identifying persons of interest (we are using a naive assumption here by assuming fraud at other companies is similar to that of Enron, which may or may not be the case).
 
-##Overview and Outliers
+## Overview and Outliers
 
 The dataset consisted of 146 records with 20 features (14 financial features, 6 e-mail features) and 1 label `POI`. Overall, there were 18 POIs identified beforehand and labelled accordingly. Three data points were removed: 
 
@@ -17,11 +17,11 @@ The dataset consisted of 146 records with 20 features (14 financial features, 6 
 
 * `The Travel Agency in the Park`  -- uncertain as to what this means -- could be an input error
 
-###Record Reconstruction
+### Record Reconstruction
 
 There were two records in the dataset that looked suspicious: `BELFER ROBERT` and `BHATNAGAR SANJAY`. Spot checking the PDF `enron61702insiderpay.pdf`, included with this folder, I found that the data entered into `final_project_dataset.pkl` was shifted one column to the right relative to the PDF. It was clear as the total stock value was actually the deferred stock value in the PDF. I reconstructed both Sanjay's and Robert's data based on the PDF since they had important data that would aid us in our analysis.
 
-##Feature Selection/Engineering
+## Feature Selection/Engineering
 
 <table>
   <tr>
@@ -103,7 +103,7 @@ The total stock and payments field appeared to work out well, with a score of 17
 
 Each feature was scaled using MinMaxScaler, scored using SelectKBest, and then run under various classification algorithms. This was all done in a pipeline as to avoid information leakage (the MinMax of the entire data set will indeed be different than the MinMax of the training and test data sets).
 
-##Algorithm
+## Algorithm
 
 The two different algorithms used were decision tree classifiers and logistic regression, with logistic regression having a higher performance. Logistic regression works out nicely as it thrives in classifying data as a positive or a negative. In our case, it provided excellent results when it came to classifying a person as a POI or not.
 
