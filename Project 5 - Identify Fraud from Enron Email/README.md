@@ -285,7 +285,7 @@ While tester.py reported worse results than my own evaluation, the most importan
 
 Another important point is how accuracy is a bad metric when dealing with this data, as the POI to non-POI ratio was extremely lopsided -- only 18 POIs were identified in a dataset of 143 records. If we were able to predict every person as 'innocent', we would get an accuracy rate of 87.41%, but our recall rate would be 0 and our precision would be 0. 
 
-##Conclusion
+## Conclusion
 
 Overall, I found this project to be very challenging and time consuming. As such, if time were not a scarce resource, I would certainly measure the performance of many more algorithms to see if I can do better. I was quite satisfied with logistic regression and I chose it because I learned how it's quite good for classification algorithms. Additionally, analyzing the e-mails would also have been quite useful, but only if the POIs were the ones writing them. Most commonly, top executives tend to have assistants that write e-mails for them, so it would be a very challenging task if that was taken into account. 
 
