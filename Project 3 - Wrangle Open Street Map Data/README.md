@@ -1,5 +1,5 @@
 
-# OpenStreetMap Project -- Data Wranglign with MongoDB
+# OpenStreetMap Project -- Data Wrangling with MongoDB
 # Vincent Kneubuhler
 
 Map Area: New York, New York, United States
