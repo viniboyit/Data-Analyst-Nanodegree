@@ -4,7 +4,7 @@
 
 Map Area: New York, New York, United States
 
-Data retrieved from: https://s3.amazonaws.com/metro-extracts.mapzen.com/new-york_new-york.osm.bz2 on March 5th, 2016.
+Data retrieved from: https://s3.amazonaws.com/metro-extracts.mapzen.com/new-york_new-york.osm.bz2 .
 
 
 ## 1. Problems Encountered in the Map
