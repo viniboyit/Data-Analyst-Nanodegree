@@ -170,6 +170,52 @@ The process used to manually tune each algorithm is shown below. Each metric was
   </tr>
 </table>
 
+* Top 10 features selected from SelectKBest without new features
+<table>
+  <tr>
+    <td><b>Metric</b></td>
+    <td><b>Logistic Regression</b></td>
+    <td><b>Decision Tree</b></td>
+  </tr>
+  <tr>
+    <td>Recall</td>
+    <td>0.38</td>
+    <td>0.41</td>
+  </tr>
+  <tr>
+    <td>Precision</td>
+    <td>0.19</td>
+    <td>0.29</td>
+  </tr>
+  <tr>
+    <td>Accuracy</td>
+    <td>0.76</td>
+    <td>0.81</td>
+  </tr>
+</table>
+* Top 12 features selected from SelectKBest without new features
+<table>
+  <tr>
+    <td><b>Metric</b></td>
+    <td><b>Logistic Regression</b></td>
+    <td><b>Decision Tree</b></td>
+  </tr>
+  <tr>
+    <td>Recall</td>
+    <td>0.39</td>
+    <td>0.41</td>
+  </tr>
+  <tr>
+    <td>Precision</td>
+    <td>0.21</td>
+    <td>0.31</td>
+  </tr>
+  <tr>
+    <td>Accuracy</td>
+    <td>0.765</td>
+    <td>0.813</td>
+  </tr>
+</table>
 
 * Top 11 features selected from SelectKBest without new features
 
